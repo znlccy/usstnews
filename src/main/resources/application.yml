@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        show-sql: true
+        hibernate:
+              naming:
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
+    servlet:
+      content-type: text/html
+  resources:
+    chain:
+      strategy:
+        content:
+          enabled: true
+          paths: /**
+
+

@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_usstnews?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+server:
+  port: 8888
