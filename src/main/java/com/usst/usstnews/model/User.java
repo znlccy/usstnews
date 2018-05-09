@@ -17,6 +17,9 @@ public class User {
     @Column(name = "u_password")
     private String u_password;
 
+    @Column(name = "u_email")
+    private String u_email;
+
     public Long getU_id() {
         return u_id;
     }
@@ -39,5 +42,13 @@ public class User {
 
     public void setU_password(String u_password) {
         this.u_password = u_password;
+    }
+
+    public String getU_email() {
+        return u_email;
+    }
+
+    public void setU_email(String u_email) {
+        this.u_email = u_email;
     }
 }
